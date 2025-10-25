@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="droneurdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0041716 0.00017228 0.017217"
+        rpy="0 0 0" />
+      <mass
+        value="7.2882" />
+      <inertia
+        ixx="0.013208"
+        ixy="3.9137E-05"
+        ixz="0.0008546"
+        iyy="0.13426"
+        iyz="2.6686E-06"
+        izz="0.1438" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rotor_1_link">
+    <inertial>
+      <origin
+        xyz="-5.7376E-07 -1.7481E-08 -0.0098762"
+        rpy="0 0 0" />
+      <mass
+        value="0.079807" />
+      <inertia
+        ixx="1.6516E-05"
+        ixy="0.00010857"
+        ixz="-6.4707E-10"
+        iyy="0.0010563"
+        iyz="-3.5361E-11"
+        izz="0.0010703" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_1-joint"
+    type="revolute">
+    <origin
+      xyz="0.58964 0.00033 -0.13625"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_1_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rotor_2_link">
+    <inertial>
+      <origin
+        xyz="-1.41143234544394E-07 -5.54708598888483E-07 -0.0155781955302505"
+        rpy="0 0 0" />
+      <mass
+        value="0.0798152085738798" />
+      <inertia
+        ixx="0.00105348280904753"
+        ixy="-0.000121864136751602"
+        ixz="1.84749890293813E-10"
+        iyy="1.94714880933364E-05"
+        iyz="4.87034628900291E-10"
+        izz="0.00107041937869501" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_2-joint"
+    type="revolute">
+    <origin
+      xyz="-0.65761 0.00033 -0.13054"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_2_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rotor_3_link">
+    <inertial>
+      <origin
+        xyz="-6.4607E-08 4.7644E-08 -0.0098763"
+        rpy="0 0 0" />
+      <mass
+        value="0.079808" />
+      <inertia
+        ixx="0.00017158"
+        ixy="0.00038597"
+        ixz="-2.2223E-10"
+        iyy="0.00090124"
+        iyz="1.0048E-10"
+        izz="0.0010703" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_3-joint"
+    type="revolute">
+    <origin
+      xyz="-0.3458 -0.53975 -0.13625"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_3_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rotor_4_link">
+    <inertial>
+      <origin
+        xyz="-7.2318E-08 -3.6741E-08 -0.015578"
+        rpy="0 0 0" />
+      <mass
+        value="0.079806" />
+      <inertia
+        ixx="6.0883E-05"
+        ixy="-0.00023654"
+        ixz="2.3609E-10"
+        iyy="0.0010119"
+        iyz="5.9818E-11"
+        izz="0.0010703" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_4-joint"
+    type="revolute">
+    <origin
+      xyz="0.27782 0.54041 -0.13054"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_4_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rotor_5_link">
+    <inertial>
+      <origin
+        xyz="5.21435957079319E-07 2.39000237822751E-07 -0.0155782246723613"
+        rpy="0 0 0" />
+      <mass
+        value="0.0798070842289244" />
+      <inertia
+        ixx="0.000309540965137595"
+        ixy="-0.000480215920452077"
+        ixz="-5.95173457392626E-10"
+        iyy="0.000763278581790073"
+        iyz="-2.56817731735947E-10"
+        izz="0.00107028560507665" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_5_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_5_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_5-joint"
+    type="revolute">
+    <origin
+      xyz="0.27782 -0.53975 -0.13054"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_5_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rotor_6_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_6_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://droneurdf/meshes/rotor_6_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_6-joint"
+    type="revolute">
+    <origin
+      xyz="-0.3458 0.54041 -0.13625"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_6_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
